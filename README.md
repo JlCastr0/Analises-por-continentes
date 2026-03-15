@@ -1,44 +1,44 @@
-# Análise Histórica de Medalhas Olímpicas (1896–2024)
+# Analise Historica de Medalhas Olimpicas (1896–2024)
 
-Este projeto realiza a consolidação de medalhas olímpicas de todas as edições dos Jogos de Verão e Inverno, integrando dados históricos oficiais com os resultados mais recentes de Paris 2024.
+Este projeto realiza a consolidacao de medalhas olimpicas de todas as edicoes dos Jogos de Verao e Inverno, integrando dados historicos oficiais com os resultados mais recentes de Paris 2024.
 
-## 📂 Estrutura do Projeto
+## Estrutura do Projeto
 
-- `historico_olimpiadas/`: Contém os arquivos CSV com dados de 1896 a 2022.
-- `paris_2024/`: Contém os resultados oficiais dos Jogos Olímpicos de Paris 2024.
-- `resultados/`: Pasta gerada automaticamente contendo:
-  - `grafico_verao.png`: Comparativo visual do Top 50 em Jogos de Verão.
-  - `grafico_inverno.png`: Comparativo visual do Top 50 em Jogos de Inverno.
-  - `grafico_total.png`: Comparativo visual do Total Geral acumulado.
-  - `tabela_verao.png`: Tabela detalhada (Ouro, Prata, Bronze) - Verão.
-  - `tabela_inverno.png`: Tabela detalhada (Ouro, Prata, Bronze) - Inverno.
-  - `tabela_total.png`: Tabela detalhada - Geral.
-- `gerar_analises.py`: Script Python responsável pelo processamento e geração dos ativos.
+- historico_olimpiadas/: Contem os arquivos CSV com dados de 1896 a 2022.
+- paris_2024/: Contem os resultados oficiais dos Jogos Olimpicos de Paris 2024.
+- resultados/: Pasta gerada automaticamente contendo:
+  - grafico_verao.png: Comparativo visual do Top 50 em Jogos de Verao.
+  - grafico_inverno.png: Comparativo visual do Top 50 em Jogos de Inverno.
+  - grafico_total.png: Comparativo visual do Total Geral acumulado.
+  - tabela_verao.png: Tabela detalhada (Ouro, Prata, Bronze) - Verao.
+  - tabela_inverno.png: Tabela detalhada (Ouro, Prata, Bronze) - Inverno.
+  - tabela_total.png: Tabela detalhada - Geral.
+- gerar_analises.py: Script Python responsavel pelo processamento e geracao dos ativos.
 
-## 📊 Critérios de Análise
+## Criterios de Analise
 
-1.  **Consolidação:** Os dados de Paris 2024 foram somados ao histórico de cada país (identificado pelo código NOC).
-2.  **Exclusões:** Foram removidos os "Jogos Intercalados de 1906", seguindo o padrão oficial do Comitê Olímpico Internacional (COI).
-3.  **Ordenação:** O ranking segue o padrão oficial:
+1. Consolidacao: Os dados de Paris 2024 foram somados ao historico de cada pais (identificado pelo codigo NOC).
+2. Exclusoes: Foram removidos os "Jogos Intercalados de 1906", seguindo o padrao oficial do Comite Olimpico Internacional (COI).
+3. Ordenacao: O ranking segue o padrao oficial:
     1. Medalhas de Ouro
     2. Medalhas de Prata
     3. Medalhas de Bronze
-4.  **Visualização:** Os gráficos de barras são puramente comparativos (sem números), enquanto as tabelas fornecem os dados exatos.
+4. Visualizacao: Os graficos de barras sao puramente comparativos (sem numeros), enquanto as tabelas fornecem os dados exatos.
 
-## 🚀 Como Executar
+## Como Executar
 
-Certifique-se de ter as bibliotecas `pandas` e `matplotlib` instaladas:
+Certifique-se de ter as bibliotecas pandas e matplotlib instaladas:
 
 ```bash
 pip install pandas matplotlib
 ```
 
-Execute o script de análise:
+Execute o script de analise:
 
 ```bash
 python gerar_analises.py
 ```
 
-## 🔗 Fontes dos Dados
-- [Basedosdados.org - Histórico das Olimpíadas](https://basedosdados.org/dataset/62f8cb83-ac37-48be-874b-b94dd92d3e2b)
-- [Kaggle - Paris 2024 Olympic Summer Games](https://www.kaggle.com/datasets/piterfm/paris-2024-olympic-summer-games/data)
+## Fontes dos Dados
+- Basedosdados.org - Historico das Olimpiadas (https://basedosdados.org/dataset/62f8cb83-ac37-48be-874b-b94dd92d3e2b)
+- Kaggle - Paris 2024 Olympic Summer Games (https://www.kaggle.com/datasets/piterfm/paris-2024-olympic-summer-games/data)
